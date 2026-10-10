@@ -15,4 +15,5 @@ try {
   console.log("✅ PostgreSQL connected");
 } catch (error) {
   console.error("❌ PostgreSQL connection failed:", (error as Error).message);
+  process.exit(1); // nothing works without the database, so stop here
 }

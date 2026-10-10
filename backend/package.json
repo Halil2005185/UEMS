@@ -7,8 +7,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "db:init": "tsx scripts/initDb.ts",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:reset": "tsx scripts/initDb.ts --reset",
+    "db:create-admin": "tsx scripts/createAdmin.ts"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",

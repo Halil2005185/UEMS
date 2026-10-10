@@ -1,2 +1,1 @@
-
-import "../config/database";
+import "../config/database.js";
